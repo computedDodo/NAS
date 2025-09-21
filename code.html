@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nasarawa Micro-Task Market - New Task</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .dark .form-select {
+             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23d1d5db' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="container mx-auto max-w-lg min-h-screen flex flex-col">
+<header class="flex items-center p-4">
+<button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined text-gray-700 dark:text-gray-300">
+                    arrow_back
+                </span>
+</button>
+<h1 class="text-xl font-bold text-center flex-grow text-gray-900 dark:text-white">Create New Task</h1>
+<div class="w-10"></div>
+</header>
+<main class="flex-grow p-4 space-y-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-600 dark:text-gray-400" for="task-title">Task Title</label>
+<input class="w-full bg-white/50 dark:bg-background-dark/50 border border-gray-300 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200 text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500" id="task-title" placeholder="e.g., Clean my apartment" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-600 dark:text-gray-400" for="description">Description</label>
+<textarea class="w-full bg-white/50 dark:bg-background-dark/50 border border-gray-300 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200 text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500" id="description" placeholder="Provide a detailed description of the task..." rows="4"></textarea>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-600 dark:text-gray-400" for="location">Location</label>
+<input class="w-full bg-white/50 dark:bg-background-dark/50 border border-gray-300 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200 text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500" id="location" placeholder="e.g., Keffi, Nasarawa" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-600 dark:text-gray-400" for="duration">Estimated Duration</label>
+<select class="form-select w-full bg-white/50 dark:bg-background-dark/50 border border-gray-300 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200 appearance-none text-gray-800 dark:text-gray-200" id="duration">
+<option>Select duration</option>
+<option value="&lt;1hr">&lt; 1 hour</option>
+<option value="1-3hr">1 - 3 hours</option>
+<option value="3-5hr">3 - 5 hours</option>
+<option value="&gt;5hr">&gt; 5 hours</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-600 dark:text-gray-400" for="pay">Pay Amount (NGN)</label>
+<div class="relative">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="text-gray-500 sm:text-sm">₦</span>
+</div>
+<input class="w-full bg-white/50 dark:bg-background-dark/50 border border-gray-300 dark:border-gray-700 rounded-lg p-3 pl-8 focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200 text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500" id="pay" placeholder="2,000" type="number"/>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-gray-600 dark:text-gray-400">Task Image (Optional)</label>
+<button class="w-full flex items-center justify-center gap-2 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-lg py-8 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:bg-primary/10 dark:hover:bg-primary/20 hover:border-primary transition duration-200">
+<span class="material-symbols-outlined">
+                        add_photo_alternate
+                    </span>
+<span>Upload Image</span>
+</button>
+</div>
+</main>
+<footer class="p-4 sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
+<button onclick="window.location.href='code1.html'" class="w-full bg-primary text-white font-bold py-4 px-5 rounded-xl shadow-lg hover:bg-opacity-90 dark:hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary transition duration-200">
+                Create Task
+            </button>
+</footer>
+</div>
+
+</body></html>

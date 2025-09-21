@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nasarawa Micro-Task Market - Sign Up</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px"
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2313a4ec' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .dark .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2313a4ec' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="container mx-auto px-4 py-8">
+<header class="flex items-center justify-between mb-8">
+<button class="text-gray-800 dark:text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Sign Up</h1>
+<div class="w-6"></div>
+</header>
+<main>
+<form action="code6.html" class="space-y-6">
+<div>
+<label class="sr-only" for="full-name">Full Name</label>
+<input class="w-full bg-white dark:bg-background-dark/50 border-gray-300 dark:border-gray-700 rounded-lg p-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-primary focus:border-primary" id="full-name" name="full-name" placeholder="Full Name" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="user-type">User Type</label>
+<select class="form-select w-full bg-white dark:bg-background-dark/50 border-gray-300 dark:border-gray-700 rounded-lg p-4 text-gray-500 dark:text-gray-400 focus:ring-primary focus:border-primary appearance-none" id="user-type" name="user-type">
+<option>User Type</option>
+<option value="task-seeker">Task Seeker</option>
+<option value="task-provider">Task Provider</option>
+</select>
+</div>
+<div>
+<label class="sr-only" for="email">Email</label>
+<input class="w-full bg-white dark:bg-background-dark/50 border-gray-300 dark:border-gray-700 rounded-lg p-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-primary focus:border-primary" id="email" name="email" placeholder="Email" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="password">Password</label>
+<input class="w-full bg-white dark:bg-background-dark/50 border-gray-300 dark:border-gray-700 rounded-lg p-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-primary focus:border-primary" id="password" name="password" placeholder="Password" type="password"/>
+</div>
+<div>
+<label class="sr-only" for="bio">Short Bio</label>
+<textarea class="w-full bg-white dark:bg-background-dark/50 border-gray-300 dark:border-gray-700 rounded-lg p-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-primary focus:border-primary" id="bio" name="bio" placeholder="Short Bio" rows="4"></textarea>
+</div>
+<div>
+<button onclick="window.location.href='code6.html'" class="w-full bg-primary text-white font-bold py-4 px-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary" type="submit"> Sign Up </button>
+</div>
+</form>
+<p class="mt-8 text-center text-sm text-gray-600 dark:text-gray-400">
+          Already have an account?
+          <a class="font-medium text-primary hover:text-primary/80" href="index.html"> Sign In </a>
+</p>
+</main>
+</div>
+
+</body></html>

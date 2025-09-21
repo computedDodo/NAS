@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nasarawa Micro-Task Market - My Tasks</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .status-accepted {
+            color: #4ade80;
+            background-color: rgba(74, 222, 128, 0.1);
+        }
+        .status-completed {
+            color: #60a5fa;
+            background-color: rgba(96, 165, 250, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex min-h-screen w-full flex-col justify-between">
+<div>
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-600 dark:text-slate-300">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold text-slate-900 dark:text-white">My Tasks</h1>
+<div class="h-10 w-10"></div>
+</header>
+<main class="p-4">
+<h2 class="mb-4 text-xl font-bold text-slate-900 dark:text-white">Accepted Tasks</h2>
+<div class="space-y-4">
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2PuG5LK-H9zGVFb99DbSdfeUL1LsIdlF2phjMwAsXNyuTH2agNkrTUDA6QLTCLQ5nmyWEfrvGblUfeiAA75L8jMobTNI4DYRPGSJ3rAzh_c6mYw1o5oJko9iaB8ZmTvz05aAAs3GZ6sM9ToFlpdO0W6XE3fcAM0SD9xmwZUeMygoFk4tbivmTgej3lhMhwFX2PdGJ1YcWCxjQiSl3D-xUzQsN4_KXFfMig4_LGiFOrV1sxoT17ArdVT2hubCVKNL70-4an8SC8w4");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Data Entry for Local Business</p>
+<span class="mt-1 inline-block rounded-full px-3 py-1 text-xs font-semibold status-accepted">Accepted</span>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW6AeC_nlifWUHN3pNA82Gl1tVzFTHhSPFJGkgQ7Jf65AOVGRrJr-V2WsIZmBQ2qqVE-LExGe22B2zVtfatznn38efFh0WQZWzqMTY7cgbavTh6Vp0fMAD9_of7MGSpzP8Pa7ZGQqaSMKauivPQwEKhIojk2fsWGAw8m_e66yuLEi0FmxCpPfYGbuH1emgT3GM1Xx8dpk5s-_SKyGBaBNj5uPLGtm9hvJu_z0S-9O3a0kk6Cb8ocepxlJ5nWGPy5GBA1i01GH6UEs");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Social Media Management</p>
+<span class="mt-1 inline-block rounded-full px-3 py-1 text-xs font-semibold status-completed">Completed</span>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCU7uF7AX-vPr387CQPLSl9QppzJnkmb2hVO3rRq-WWeycivq6DPpyfrzZj7xMqkANl4auUWrplwLqh_VYGfUUmiYX_hpSu2UHBwAv6ztfibY-fZsNisiQGxzbq6xSmk4hsMbYQ4GJyYxHPhKRrNsisjQbb0ZQUVo6zq5o1vr4WT7zGVrS3H8Siof-De8VYeQIBtZs5u_gthGEPmBYE3litGIyCmW9ItKcygEqMeXPVRURbU_iLoSbIixhDqtbKH4OF-zmYWotqONU");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Content Writing for Blog</p>
+<span class="mt-1 inline-block rounded-full px-3 py-1 text-xs font-semibold status-accepted">Accepted</span>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800/50">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCa_7D3LnFrqBbEtS4TagwX-S4-BKaMvihtEiyIdx001KeVasX8cea_yk0y5fJeeujNSRoJrgGet2Q8fMV9APeJoU6ZxoJs5lfc7z3nHqASeDhUXLqNtZ5QQwnb8658qb7Us6EcksijRnUtlvOTsj9RTAVR9YMuFgThbRm7fjS_J2leaUjRUhGF2m9xwhyRXatqvMvaHXvdXzi78Jpo4NPvZvCnGD2z2wGE_228PoIfx5ozABxht8LWiPhy3NYy_w1MX_tMIs0YSk8");'></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Graphic Design for Marketing</p>
+<span class="mt-1 inline-block rounded-full px-3 py-1 text-xs font-semibold status-completed">Completed</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-slate-200/80 bg-background-light/80 pb-3 pt-2 backdrop-blur-sm dark:border-slate-700/80 dark:bg-background-dark/80">
+<nav class="flex justify-around">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="code6.html">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z"></path>
+</svg>
+<p class="text-xs font-medium tracking-wide">Tasks</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="code3.html">
+<div class="relative">
+<div class="absolute -inset-2 rounded-full bg-primary/20"></div>
+<svg class="relative z-10" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm-34.34,77.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</div>
+<p class="text-xs font-bold tracking-wide">My Tasks</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="code7.html">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+<p class="text-xs font-medium tracking-wide">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
